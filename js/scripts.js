@@ -68,9 +68,9 @@ function pronounce(num) {
     return theword;
 }
 
-//function capitalize (n) {
-    //return n[0].toUpperCase() + n.slice(1).toLowerCase();
-//}
+function capitalize (n) {
+    return n[0].toUpperCase() + n.slice(1).toLowerCase();
+}
 
 
 jQuery(document).ready(function(){
@@ -78,7 +78,7 @@ jQuery(document).ready(function(){
     $("#input-form").submit(function(e) {
         var mynum = ($("input#number").val());
         theword = "";
-        $("#res").text(pronounce(mynum);
+        $("#res").text(capitalize(pronounce(mynum));
         $("#result").show();
 
         e.preventDefault()
